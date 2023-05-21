@@ -17,7 +17,7 @@ class ConexionPDO
         $this->user = $user;
         $this->pws = $pws;
     }
-
+    //Creando metodo para abrir enlace con base de datos
     public function conectar()
     {
         try {
@@ -41,7 +41,7 @@ class ConexionPDO
             die();
         }
     }
-
+    //Creando metodo desconectar base de datos
     public function desconectar()
     {
         $this->connection = null;
